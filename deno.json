@@ -1,0 +1,16 @@
+{
+  "imports": {
+    "@dx/reflect": "jsr:@dx/reflect@0.2.14",
+    "hono": "jsr:@hono/hono@^4.6.2"
+  },
+  "tasks": {
+    "start": "deno run --allow-net main.ts",
+    "dev": "deno run --allow-net --watch main.ts"
+  },
+  "compilerOptions": {
+    "jsx": "precompile",
+    "jsxImportSource": "hono/jsx",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  }
+}
